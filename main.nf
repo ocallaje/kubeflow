@@ -1,6 +1,5 @@
 process sayHello {
     container 'alpine:latest'
-    executor 'k8s'
 
     output:
     stdout
