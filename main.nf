@@ -8,5 +8,6 @@ process sayHello {
     script:
     """
     echo Hello from Kubernetes!
+    sleep 600
     """
 }
