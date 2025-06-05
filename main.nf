@@ -1,6 +1,8 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
+    container: 'alpine:latest'
+    
     input:
     val x
 
