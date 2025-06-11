@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
-    container 'bash:5'
+    container 'debian:bullseye-slim'
 
     input:
     val x
