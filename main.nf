@@ -11,6 +11,7 @@ process sayHello {
 
     script:
     """
+    #!/bin/bash
     echo '${x} world!'
     """
 }
