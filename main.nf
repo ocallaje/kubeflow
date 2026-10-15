@@ -17,6 +17,7 @@ process sayHello {
 }
 
 workflow {
-    //Channel.of('Bonjour', 'Ciao', 'Hello', 'Hola') | sayHello | view
-    sayHello("Hella")
+    greetings = channel.of('Bonjour', 'Ciao', 'Hello', 'Hola')
+    sayHello(greetings)
+    sayHello.out.view()
 }
